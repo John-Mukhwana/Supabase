@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ratings with Supabase</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Rate This Product</h1>
+    
+    <!-- Form for submitting ratings -->
+    <form id="ratingForm">
+      <input type="hidden" id="itemId" value="12345"> <!-- Example Item ID -->
+      <label for="rating">Your Rating (1-5):</label>
+      <input type="number" id="rating" min="1" max="5" required>
+      <button type="submit">Submit</button>
+    </form>
+
+    <!-- Section to display average rating -->
+    <div id="averageRating">Average Rating: Loading...</div>
+  </div>
+
+  <!-- Supabase and custom scripts -->
+  <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
+  
+  
